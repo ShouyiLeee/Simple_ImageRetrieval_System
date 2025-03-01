@@ -25,7 +25,7 @@ def L1_scores(query, data):
     return np.sum(np.abs(data - query), axis=axis_batch_size)
 
 
-def get_L1_score(root_img_path, query_path, size=(224, 224)):
+def get_L1_scores(root_img_path, query_path, size=(224, 224)):
     query = read_image_from_path(query_path, size)
     ls_path_score = []
     for folder in os.listdir(root_img_path):
@@ -57,5 +57,5 @@ def plot_results(query_path, ls_path_score, reverse=False):
 root_img_path = f"{ROOT}/"
 query_path = "C:\\Users\\Acer\\OneDrive\\Desktop\\NCKH\\Dataset\\VIVQA4Edu-2\\Screenshot_618.png"
 size = (224, 224)
-query, ls_path_score = get_L1_score(root_img_path, query_path, size)
+query, ls_path_score = get_L1_scores(root_img_path, query_path, size)
 plot_results(query_path, ls_path_score, reverse=False)
