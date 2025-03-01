@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
-ROOT = 'C:\\Users\\Acer\OneDrive\\Desktop\\NCKH\\Dataset\\ViVQA4Edu'
+ROOT = 'path'
 CLASS_NAME = sorted(os.listdir(ROOT))
 
 
@@ -55,7 +55,7 @@ def plot_results(query_path, ls_path_score, reverse=False):
     plt.show()
     
 root_img_path = f"{ROOT}/"
-query_path = "C:\\Users\\Acer\\OneDrive\\Desktop\\NCKH\\Dataset\\VIVQA4Edu-2\\Screenshot_618.png"
+query_path = "path"
 size = (224, 224)
 query, ls_path_score = get_L1_scores(root_img_path, query_path, size)
 plot_results(query_path, ls_path_score, reverse=False)

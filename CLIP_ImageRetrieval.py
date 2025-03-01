@@ -7,7 +7,7 @@ import chromadb
 from tqdm import tqdm
 
 
-ROOT = 'C:\\Users\\Acer\OneDrive\\Desktop\\NCKH\\Dataset\\ViVQA4Edu'
+ROOT = 'path'
 CLASS_NAME = sorted(os.listdir(ROOT))
 
 embedding_function = OpenCLIPEmbeddingFunction()

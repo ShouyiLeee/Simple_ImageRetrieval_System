@@ -1,0 +1,6 @@
+numpy
+pillow
+matplotlib
+tqdm
+chromadb
+open-clip-torch
